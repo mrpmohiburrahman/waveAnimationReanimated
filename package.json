@@ -4,7 +4,9 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "web": "expo start --web",
-    "start": "react-native start"
+    "start": "react-native start",
+    "update:pods": "npx pod-install ios",
+    "postinstall": "yarn run update:pods"
   },
   "dependencies": {
     "expo": "~42.0.1",
